@@ -1,20 +1,141 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+/*
 ✦ theme-dark — класс тёмной темы
 ✦ theme-light — класс светлой темы
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
 */
 
 .page {
-  min-inline-size: 320px;
+  max-width: 375px;
+  width: 100%;
   min-block-size: 100dvb;
+  color: #00CC14;
+  background:
+          linear-gradient(transparent 50%, #000000 50%),
+          linear-gradient(90deg, transparent 50%, #000000 50%),
+          linear-gradient(180deg, #007F0C 0%, #004306 100%), no-repeat, fixed;
+  background-size: 4px 4px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-height: 327px;
+  padding-top: 120px;
+  padding-bottom: 25px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: PressStart2P, sans-serif;
+  font-weight: 400;
+  background-color: #000000;
+  border: 2px solid #00CC14;
+}
+
+.header__title::before {
+  content: "</HTML>";
+  font-size: 49px;
+  line-height: 49px;
+}
+
+.header__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.header__theme-menu {
+  margin-top: 5px;
+  margin-left: 18px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 12px;
+}
+
+.theme-menu__button {
+  text-align: left;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.post {
+  font-family: Inter, sans-serif;
+  font-variation-settings: 'slnt' 0;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.post__title {
+  font-weight: 785;
+  line-height: 21.78px;
+  padding: 3.5px 10px 5.5px 10px;
+  background: #000000;
+  border: 2px solid #00CC14;
+}
+
+.post__card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background: black;
+}
+
+.card-img {
+  width: 375px;
+}
+
+.card__article {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 0 25px 25px 25px;
+  font-weight: 465;
+  line-height: 21px;
+}
+
+.card-button {
+  align-self: flex-end;
+  background: transparent;
+  border: 2px solid #00CC14;
+  cursor: pointer;
+  width: 130px;
+  height: 38px;
+  font-family: PressStart2P, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12.6px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__button {
+  font-family: PressStart2P, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12.6px;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 100px;
+  background: black;
+  border: 2px solid #00CC14;
+  cursor: pointer;
+  width: 306px;
+  height: 84px;
 }
