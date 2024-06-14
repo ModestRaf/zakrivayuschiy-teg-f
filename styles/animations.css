@@ -12,3 +12,23 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes selected {
+    0% {
+        left: -13px;
+    }
+    50% {
+        left: -17px;
+    }
+    100% {
+        left: -13px;
+    }
+}
+
+@keyframes focus {
+    from {
+        transform: matrix(0, 0, 0, 0, 0, 0);
+    }
+    to {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
