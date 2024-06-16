@@ -10,6 +10,8 @@
     --gradient-back-color: #FFFFFF;
     --accent-color: #000000;
     --background-color: #FFFFFF;
+    --button-color: #FFFFFF;
+    --like-button-color: #FF0000;
 }
 
 :root.theme-dark {
@@ -18,6 +20,8 @@
     --gradient-back-color: #000000;
     --accent-color: #00CC14;
     --background-color: #000000;
+    --button-color: #00CC14;
+    --like-button-color: #FF0000;
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,5 +31,14 @@
         --gradient-back-color: #FFFFFF;
         --accent-color: #000000;
         --background-color: #FFFFFF;
+        --like-button-color: #FF0000;
+    }
+
+    .button__text {
+        color: var(--button-color);
+    }
+
+    .floppy-1 {
+        color: var(--button-color);
     }
 }
