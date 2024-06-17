@@ -38,6 +38,14 @@
         color: var(--button-color);
     }
 
+    .card__article {
+        font-weight: 400;
+    }
+
+    .post__title {
+        font-weight: 700;
+    }
+
     .floppy-1 {
         color: var(--button-color);
     }

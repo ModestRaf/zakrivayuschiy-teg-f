@@ -14,13 +14,13 @@
 */
 @keyframes selected {
     0% {
-        left: -13px;
+        left: -12px;
     }
     50% {
-        left: -17px;
+        left: -16px;
     }
     100% {
-        left: -13px;
+        left: -12px;
     }
 }
 
