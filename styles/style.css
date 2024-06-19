@@ -333,11 +333,6 @@
     color: var(--button-color);
     position: relative;
     mix-blend-mode: difference;
-    z-index: 1;
-}
-
-.card__like-button.is-liked .button__text {
-    content: "unlike";
 }
 
 .footer {
@@ -363,6 +358,10 @@
     cursor: pointer;
     width: 306px;
     height: 84px;
+}
+
+.footer__button svg {
+    flex-shrink: 0;
 }
 
 .footer__button::before {
@@ -479,4 +478,40 @@
 .close-button:focus-visible {
     box-shadow: 2px 2px var(--accent-color);
     transition: .3s ease;
+}
+
+@media (width >= 700px) {
+    .page {
+        max-width: 700px;
+    }
+
+    .header {
+        padding-top: 136px;
+    }
+
+    .header__title {
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    .header__text {
+        font-size: 23px;
+        line-height: 23px;
+    }
+
+    .image-watermark {
+        top: 25px;
+        right: 25px;
+    }
+
+    .footer__button {
+        flex-direction: row;
+        width: 335px;
+        height: 55px;
+    }
+
+    .floppy-1 {
+        width: 21px;
+        height: 21px;
+    }
 }
