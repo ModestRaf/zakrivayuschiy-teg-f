@@ -12,6 +12,13 @@ body {
   margin: 0 auto;
   min-inline-size: 320px;
   max-inline-size: 1440px;
+  font-family: var(--font);
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: var(--font);
+  }
 }
 
 h1,
@@ -47,6 +54,11 @@ ol {
   list-style: none;
 }
 
+html, body {
+  max-inline-size: 100%;
+  overflow-x: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -55,4 +67,10 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
 }

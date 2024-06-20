@@ -12,6 +12,8 @@
     --background-color: #FFFFFF;
     --button-color: #FFFFFF;
     --like-button-color: #FF0000;
+    --font-pixel: PressStart2P, sans-serif;
+    --font: Inter, sans-serif;
 }
 
 :root.theme-dark {
@@ -22,6 +24,8 @@
     --background-color: #000000;
     --button-color: #00CC14;
     --like-button-color: #FF0000;
+    --font-pixel: PressStart2P, sans-serif;
+    --font: Inter, sans-serif;
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,6 +36,8 @@
         --accent-color: #000000;
         --background-color: #FFFFFF;
         --like-button-color: #FF0000;
+        --font-pixel: PressStart2P, sans-serif;
+        --font: Inter, sans-serif;
     }
 
     .button__text {

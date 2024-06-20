@@ -7,15 +7,15 @@
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 */
-
 .page {
-    max-width: 375px;
+    min-width: 375px;
     width: 100%;
     min-block-size: 100dvb;
     color: var(--accent-color);
-    background: repeating-linear-gradient(transparent 0 2px, var(--gradient-back-color) 2px 4px),
-    repeating-linear-gradient(90deg, transparent 0 2px, var(--gradient-back-color) 2px 4px),
-    linear-gradient(180deg, var(--gradient-first-color) 0%, var(--gradient-second-color) 100%), fixed;
+    background:
+            repeating-linear-gradient(transparent 0 2px, var(--gradient-back-color) 2px 4px),
+            repeating-linear-gradient(90deg, transparent 0 2px, var(--gradient-back-color) 2px 4px),
+            linear-gradient(180deg, var(--gradient-first-color) 0%, var(--gradient-second-color) 100%), fixed;
     background-size: cover;
 }
 
@@ -24,34 +24,29 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: inherit;
     min-height: 327px;
     padding-top: 120px;
     padding-bottom: 23px;
     margin-top: 100px;
     margin-bottom: 100px;
-    font-family: PressStart2P, sans-serif;
+    font-family: var(--font-pixel);
     font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
     background-color: var(--background-color);
     border: 2px solid var(--accent-color);
 }
 
 .header__title {
-    text-transform: uppercase;
     font-size: 49px;
     line-height: 49px;
-}
-
-.header__text {
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 14px;
 }
 
 .header__theme-menu {
     margin-top: 5px;
     margin-left: 19px;
-    font-size: 14px;
-    line-height: 14px;
 }
 
 .theme-menu__list {
@@ -65,9 +60,6 @@
     position: relative;
     text-align: left;
     text-transform: uppercase;
-    background: transparent;
-    border: none;
-    cursor: pointer;
 }
 
 .theme-menu__button:hover {
@@ -89,9 +81,7 @@
     content: "▶";
     position: absolute;
     left: -12px;
-    right: 0;
     top: 0;
-    bottom: 0;
     animation: selected .5s ease-in-out infinite;
 }
 
@@ -118,8 +108,8 @@
 
 .post {
     box-sizing: border-box;
+    width: inherit;
     border: 2px solid var(--accent-color);
-    font-family: Inter, sans-serif;
     font-variation-settings: 'slnt' 0;
     font-size: 18px;
     text-align: left;
@@ -142,7 +132,6 @@
 
 .card__image {
     position: relative;
-    width: inherit;
 }
 
 .card-img {
@@ -185,7 +174,7 @@
 
 .image-watermark {
     position: absolute;
-    font-family: PressStart2P, sans-serif;
+    font-family: var(--font-pixel);
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
@@ -223,7 +212,6 @@
 .card__icon-button {
     background: transparent;
     border: none;
-    cursor: pointer;
 }
 
 .like-icon {
@@ -293,10 +281,9 @@
     background-color: var(--background-color);
     position: relative;
     border: 2px solid var(--accent-color);
-    cursor: pointer;
     width: 130px;
     height: 38px;
-    font-family: PressStart2P, sans-serif;
+    font-family: var(--font-pixel);;
     font-size: 14px;
     font-weight: 400;
     line-height: 12.6px;
@@ -338,6 +325,7 @@
 .footer {
     display: flex;
     justify-content: center;
+    width: inherit;
 }
 
 .footer__button {
@@ -347,7 +335,7 @@
     justify-content: center;
     gap: 8px;
     position: relative;
-    font-family: PressStart2P, sans-serif;
+    font-family: var(--font-pixel);;
     font-size: 14px;
     font-weight: 400;
     line-height: 12.6px;
@@ -355,7 +343,6 @@
     margin-bottom: 100px;
     background: var(--background-color);
     border: 2px solid var(--accent-color);
-    cursor: pointer;
     width: 306px;
     height: 84px;
 }
@@ -399,7 +386,7 @@
 }
 
 .footer__button-dialog {
-    font-family: PressStart2P, sans-serif;
+    font-family: var(--font-pixel);;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -448,7 +435,6 @@
     background: var(--background-color);
     line-height: 12.6px;
     text-align: center;
-    cursor: pointer;
     border: 2px solid var(--accent-color);
     width: 257px;
     height: 38px;
