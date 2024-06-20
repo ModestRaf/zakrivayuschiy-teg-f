@@ -283,7 +283,7 @@
     border: 2px solid var(--accent-color);
     width: 130px;
     height: 38px;
-    font-family: var(--font-pixel);;
+    font-family: var(--font-pixel);
     font-size: 14px;
     font-weight: 400;
     line-height: 12.6px;
@@ -335,7 +335,7 @@
     justify-content: center;
     gap: 8px;
     position: relative;
-    font-family: var(--font-pixel);;
+    font-family: var(--font-pixel);
     font-size: 14px;
     font-weight: 400;
     line-height: 12.6px;
@@ -386,7 +386,7 @@
 }
 
 .footer__button-dialog {
-    font-family: var(--font-pixel);;
+    font-family: var(--font-pixel);
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
