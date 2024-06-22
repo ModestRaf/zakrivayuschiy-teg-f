@@ -12,8 +12,10 @@
     --background-color: #FFFFFF;
     --button-color: #FFFFFF;
     --like-button-color: #FF0000;
-    --font-pixel: PressStart2P, sans-serif;
+    --font-pixel: PressStart2P, fantasy;
     --font: Inter, sans-serif;
+    --font-weight-article: 400;
+    --font-weight-title: 700;
 }
 
 :root.theme-dark {
@@ -24,8 +26,10 @@
     --background-color: #000000;
     --button-color: #00CC14;
     --like-button-color: #FF0000;
-    --font-pixel: PressStart2P, sans-serif;
+    --font-pixel: PressStart2P, fantasy;
     --font: Inter, sans-serif;
+    --font-weight-article: 465;
+    --font-weight-title: 785;
 }
 
 @media (prefers-color-scheme: light) {
@@ -36,8 +40,10 @@
         --accent-color: #000000;
         --background-color: #FFFFFF;
         --like-button-color: #FF0000;
-        --font-pixel: PressStart2P, sans-serif;
+        --font-pixel: PressStart2P, fantasy;
         --font: Inter, sans-serif;
+        --font-weight-article: 400;
+        --font-weight-title: 700;
     }
 
     .button__text {
@@ -45,11 +51,11 @@
     }
 
     .card__article {
-        font-weight: 400;
+        font-weight: var(--font-weight-article);
     }
 
     .post__title {
-        font-weight: 700;
+        font-weight: var(--font-weight-title);
     }
 
     .floppy-1 {

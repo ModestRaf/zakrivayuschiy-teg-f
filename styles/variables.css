@@ -5,7 +5,8 @@
     --accent-color: #00CC14;
     --background-color: #000000;
     --like-button-color: #FF0000;
-    --font-pixel: PressStart2P, sans-serif;
+    --font-pixel: PressStart2P, fantasy;
     --font: Inter, sans-serif;
-    --font-weight: 400;
+    --font-weight-article: 465;
+    --font-weight-title: 785;
 }
